@@ -4,7 +4,7 @@ var board = new five.Board({
     io: new Raspi()
 });
 var status;
-startTimer = setTimeout(() => {
+var startTimer = setTimeout(() => {
     console.log("timeout beyond time");
 }, 1500);
 
