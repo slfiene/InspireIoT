@@ -3,7 +3,7 @@ var Raspi = require('raspi-io');
 var board = new five.Board({
     io: new Raspi()
 });
-
+var status;
 
 board.on("ready", function() {
   // Contact Mode: Normally Open (default!)
@@ -11,10 +11,26 @@ board.on("ready", function() {
 
   sw.on("open", function() {
     console.log("open");
+        let status = false;
+
+        let startTimer = setTimeout(() => {
+            console.log("timeout beyond time");
+        }, 1500);
+    
+    if (status == false) {
+        startTimer();
+    } 
+
 
   });
 
   sw.on("close", function() {
     console.log("close");
+        let status = true;
+    
+    if (status = true) {
+        clearTimeout(startTimer);
+    }
+
   });
 });
