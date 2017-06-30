@@ -10,10 +10,10 @@ board.on("ready", function() {
   var sw = new five.Switch('P1-7');
 
   sw.on("open", function() {
-    console.log("open");
+    console.log("close");
   });
 
   sw.on("close", function() {
-    console.log("close");
+    console.log("open");
   });
 });
