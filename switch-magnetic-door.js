@@ -4,9 +4,10 @@ var board = new five.Board({
     io: new Raspi()
 });
 var status;
-var startTimer = setTimeout(() => {
-    console.log("timeout beyond time");
-}, 1500);
+
+function startTimer() {
+    console.log("starting this up!");
+}
 
 board.on("ready", function () {
     // Contact Mode: Normally Open (default!)
@@ -19,7 +20,7 @@ board.on("ready", function () {
 
 
         if (status == false) {
-            startTimer();
+            setTimeout(startTimer, 1500);
         }
 
 
@@ -30,7 +31,7 @@ board.on("ready", function () {
         let status = true;
 
         if (status = true) {
-            clearTimeout(startTimer);
+            clearTimeout();
         }
 
     });
