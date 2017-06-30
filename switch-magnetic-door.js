@@ -7,7 +7,7 @@ var board = new five.Board({
 
 board.on("ready", function() {
   // Contact Mode: Normally Open (default!)
-  var sw = new five.Switch(7);
+  var sw = new five.Switch('P1-7');
 
   sw.on("open", function() {
     console.log("open");
