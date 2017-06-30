@@ -1,0 +1,21 @@
+{
+  "name": "inspireiot",
+  "version": "1.0.0",
+  "description": "iot project for inspire",
+  "main": "switch-magnetic-door.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slfiene/InspireIoT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slfiene/InspireIoT/issues"
+  },
+  "homepage": "https://github.com/slfiene/InspireIoT#readme"
+}
