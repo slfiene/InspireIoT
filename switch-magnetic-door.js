@@ -23,6 +23,7 @@ board.on("ready", function () {
         console.log("close");
         let status = true;
         startTimer();
+        return false;
     });
 
 });
