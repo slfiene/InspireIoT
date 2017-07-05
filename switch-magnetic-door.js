@@ -17,13 +17,6 @@ board.on("ready", function () {
         console.log("open");
         let status = false;
 
-
-
-        if (status == false) {
-            setTimeout(startTimer, 1500);
-        }
-
-
     });
 
     sw.on("close", function () {
