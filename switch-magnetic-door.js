@@ -6,13 +6,12 @@ var board = new five.Board({
 var status;
 
 var startTimer = function () {
-    console.log("Timer Started!");
-    setTimeout(startTimer, 10000);
+
 }
 
 board.on("ready", function () {
     // Contact Mode: Normally Open (default!)
-    var sw = new five.Switch('P1-7');
+    var sw = new five.Switch(7);
 
     sw.on("open", function () {
         console.log("open");
@@ -23,7 +22,6 @@ board.on("ready", function () {
         console.log("close");
         let status = true;
         startTimer();
-        return false;
     });
 
 });
